@@ -1,0 +1,34 @@
+:root {
+  --tag-1: rgb(236, 181, 231);
+  --tag-2: rgb(190, 184, 245);
+  --tag-3: rgb(181, 216, 236);
+  --tag-4: rgb(181, 236, 206);
+
+  --accept-main: rgb(200, 255, 200);
+  --accept-accent: rgb(160, 245, 150);
+  --cancel-main: rgb(255, 200, 200);
+  --cancel-accent: rgb(245, 150, 150);
+  --back-main: rgb(213, 213, 213);
+  --back-accent: rgb(203, 203, 203);
+  --normal-main: rgb(255, 255, 255);
+  --normal-accent: rgb(245, 245, 245);
+  --success-main: rgb(30, 255, 0);
+  --success-accent: rgb(20, 245, 0);
+  --warning-main: rgb(255, 247, 0);
+  --warning-accent: rgb(245, 237, 0);
+  --danger-main: rgb(255, 30, 30);
+  --danger-accent: rgb(245, 20, 20);
+}
+
+tgl-tag-bar {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1vh 0;
+}
+
+.square {
+  border-radius: 0px;
+}

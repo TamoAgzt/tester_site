@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="engine/Gameplay.js"></script>
+    <script src="engine/CollisionHandler.js"></script>
+    <script src="engine/InputHandler.js"></script>
+    <script src="tgl/_required/Functions.js"></script>
+    <script src="tgl/classes/CustomElements/UIComponents.js" defer></script>
+    <script src="tgl/classes/Langer/Langer.js" defer></script>
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- <tgl-language-menu languages="en hu de nl fr ru"></tgl-language-menu> -->
+    <tgl-tag-bar>
+      <tgl-tag img="assets/Discordicon.png" tag-type="docs"></tgl-tag>
+      <tgl-tag img="assets/Spotifyicon.png" tag-type="script"></tgl-tag>
+      <tgl-tag img="assets/Twitchicon.png" tag-type="prog-lang"></tgl-tag>
+      <tgl-tag img="assets/Unityicon.png" tag-type="tools"></tgl-tag>
+    </tgl-tag-bar>
+    <br />
+
+    <tgl-button fill="danger" shape="square" onclick="SAYHI()"></tgl-button>
+
+    <tgl-slider
+      size="2"
+      shape="square"
+      min="0"
+      max="100"
+      value="30"
+    ></tgl-slider>
+  </body>
+  <script src="main.js"></script>
+</html>
