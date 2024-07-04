@@ -4,7 +4,7 @@ class SlideToggles extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log('Slide toggle element added to page.');
+    // console.log('Slide toggle element added to page.');
     // Create a shadow root
     const shadow = this.attachShadow({ mode: 'open' });
 
@@ -47,7 +47,7 @@ class SlideToggles extends HTMLElement {
 
     // Create some CSS to apply to the shadow dom
     const style = document.createElement('style');
-    console.log(style.isConnected);
+    // console.log(style.isConnected);
 
     const defWidth = 60;
     const defHeight = 30;
@@ -99,7 +99,7 @@ class SlideToggles extends HTMLElement {
     `;
 
     shadow.appendChild(style);
-    console.log(style.isConnected);
+    // console.log(style.isConnected);
     shadow.appendChild(wrapper);
     wrapper.appendChild(input);
   }

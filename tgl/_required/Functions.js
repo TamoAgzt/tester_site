@@ -8,7 +8,7 @@ function SelectFromWhere(_select, _from, _whereField, _whereValue) {
       return _from[index][_select];
     }
   }
-  return 'tgl/Functions.SelectFromWhere: Entry not found';
+  return 'tgl/_required/Functions.SelectFromWhere: Entry not found';
 }
 
 async function LoadJSONFiles(alias, path) {
@@ -22,9 +22,8 @@ async function InitializeJSONData() {
   // Initialize JSON data with path and an alias to use in scripts
   const jsonData = {};
   const files = [
-    { alias: 'Test', path: './assets/data/test.json' },
-    { alias: 'GameConsts', path: './assets/data/game_constants.json' },
-    { alias: 'Lang', path: './assets/data/Languages.json' }
+    { alias: 'User', path: './assets/data/_users.json' },
+    { alias: 'Lang', path: './assets/data/_languages.json' }
   ];
   for (const file of files) {
     const { alias, data } = await LoadJSONFiles(file.alias, file.path);

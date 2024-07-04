@@ -5,14 +5,12 @@ class Buttons extends HTMLElement {
     super();
   }
   connectedCallback() {
-    console.log('Button element added to page.');
+    // console.log('Button element added to page.');
     // Create a shadow root
     const shadow = this.attachShadow({ mode: 'open' });
 
     const button = document.createElement('button');
-    const text = document.createElement('span');
     button.setAttribute('name', 'Button box');
-    text.setAttribute('name', 'Text content');
 
     // Attributes check
     // fill, shape, size, disabled, download, type (changes the theme), icon-pos
@@ -45,8 +43,8 @@ class Buttons extends HTMLElement {
       status = false;
     }
     let type;
-    if (this.hasAttribute('type')) {
-      type = this.getAttribute('type');
+    if (this.hasAttribute('btype')) {
+      type = this.getAttribute('btype');
     } else {
       type = 'normal';
     }
@@ -61,7 +59,6 @@ class Buttons extends HTMLElement {
     if (this.hasAttribute('content')) {
       content = this.getAttribute('content');
     } else {
-      // start none exclusive end
       content = 'BUTTON';
     }
 
@@ -70,7 +67,7 @@ class Buttons extends HTMLElement {
       fill + ' ' + shape + ' ' + status + ' ' + type + ' ' + imgPos
     );
 
-    text.innerText = content;
+    button.innerText = content;
 
     // let imgUrl;
     // if (this.hasAttribute('img')) {
@@ -84,7 +81,7 @@ class Buttons extends HTMLElement {
 
     // Create some CSS to apply to the shadow dom
     const style = document.createElement('style');
-    console.log(style.isConnected);
+    // console.log(style.isConnected);
 
     const defWidth = 80;
     const defHeight = 30;
@@ -160,9 +157,8 @@ class Buttons extends HTMLElement {
       }
     `;
     shadow.appendChild(style);
-    console.log(style.isConnected);
+    // console.log(style.isConnected);
     shadow.appendChild(button);
-    button.appendChild(text);
   }
 }
 customElements.define('tgl-button', Buttons);

@@ -38,5 +38,5 @@ function UpdateContent(data, lang) {
     $(this).text(data.Lang[lang].Buttons[originalText] || originalText);
   });
 
-  console.log(data.Lang[lang].Headers.Title1);
+  // console.log(data.Lang[lang].Headers.Title1);
 }

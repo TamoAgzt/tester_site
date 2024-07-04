@@ -1,0 +1,68 @@
+{
+  "en": {
+    "Headers": {
+      "Main": "Super cool test site",
+      "Cypress": "Cypress testing"
+    },
+    "Contents": {
+      "Purpose": "Use this website to play around with cypress",
+      "AboutCy": "Cypress is a JavaScript framework used for end-to-end testing."
+    },
+    "Buttons": {
+      "Save": "Save",
+      "Cancel": "Cancel",
+      "Back": "Back",
+      "Start": "Start",
+      "Play": "Play",
+      "Pause": "Pause",
+      "Options": "Options",
+      "Settings": "Settings",
+      "Login": "Log in",
+      "Logout": "Log out"
+    }
+  },
+  "nl": {
+    "Headers": {
+      "Main": "Super coole test site",
+      "Cypress": "Cypress testing"
+    },
+    "Contents": {
+      "Purpose": "Gebruik dit website om rond te spelen met Cypress",
+      "AboutCy": "Cypress is een JavaScript framework gebruikt voor end-to-end testing."
+    },
+    "Buttons": {
+      "Save": "Opslaan",
+      "Cancel": "Annuleren",
+      "Back": "Terug",
+      "Start": "Beginnen",
+      "Play": "Afspelen",
+      "Pause": "Pauzeren",
+      "Options": "Opties",
+      "Settings": "Instellingen",
+      "Login": "Inloggen",
+      "Logout": "Uitloggen"
+    }
+  },
+  "hu": {
+    "Headers": {
+      "Main": "Szuper cool teszt site",
+      "Cypress": "Cypress tesztelés"
+    },
+    "Contents": {
+      "Purpose": "Használd ezt a weboldalt arra hogz játsz Cypress-el.",
+      "AboutCy": "Cypress egy end-to-end teszelésre készült JavaScript framework."
+    },
+    "Buttons": {
+      "Save": "Mentés",
+      "Cancel": "Mégse",
+      "Back": "Vissza",
+      "Start": "Kezdés",
+      "Play": "Lejátszás",
+      "Pause": "Szünet",
+      "Options": "Opciók",
+      "Settings": "Beállítások",
+      "Login": "Bejelentkezés",
+      "Logout": "Kijelentkezés"
+    }
+  }
+}

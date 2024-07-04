@@ -4,7 +4,7 @@ class Sliders extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log('Slider element added to page.');
+    // console.log('Slider element added to page.');
     // Create a shadow root
     const shadow = this.attachShadow({ mode: 'open' });
     const wrapper = document.createElement('input');
@@ -55,7 +55,7 @@ class Sliders extends HTMLElement {
 
     // Create some CSS to apply to the shadow dom
     const style = document.createElement('style');
-    console.log(style.isConnected);
+    // console.log(style.isConnected);
 
     const defWidth = 100;
     const defHeight = 10;
@@ -137,7 +137,7 @@ class Sliders extends HTMLElement {
     `;
 
     shadow.appendChild(style);
-    console.log(style.isConnected);
+    // console.log(style.isConnected);
     shadow.appendChild(wrapper);
   }
 }

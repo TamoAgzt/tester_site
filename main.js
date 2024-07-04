@@ -7,12 +7,29 @@
 
 //   ShowCanvas();
 // });
-
+let data;
 // Perform updateContent function when page loads
 $(document).ready(async function () {
-  // STAY
+  data = await InitializeJSONData();
 });
 
-function SAYHI() {
-  alert('HI');
+async function Login() {
+  let inputUsername = $('#usrname').val();
+  let inputPassword = $('#psswrd').val();
+  if (
+    inputUsername ==
+      SelectFromWhere('name', data.User.User, 'name', inputUsername) &&
+    inputPassword ==
+      SelectFromWhere('password', data.User.User, 'name', inputUsername)
+  ) {
+    sessionStorage.setItem('logedin', true);
+    window.location.href = 'index.html';
+  } else {
+    alert('Something wrong');
+    sessionStorage.setItem('logedin', false);
+  }
+}
+async function Logout() {
+  sessionStorage.setItem('logedin', false);
+  window.location.href = 'loginpage.html';
 }

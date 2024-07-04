@@ -4,15 +4,15 @@ class Tags extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log('Tag element added to page.');
+    // console.log('Tag element added to page.');
     // Create a shadow root
     const shadow = this.attachShadow({ mode: 'open' });
 
     const wrapper = document.createElement('div');
-    const img = document.createElement('img');
+    const icon = document.createElement('div');
     wrapper.setAttribute('class', 'tag');
     wrapper.setAttribute('name', 'Tag box');
-    img.setAttribute('name', 'Tag icon');
+    icon.setAttribute('name', 'Tag icon');
 
     let tagType;
     if (this.hasAttribute('tag-type')) {
@@ -30,17 +30,17 @@ class Tags extends HTMLElement {
 
     // Insert icon
     let imgUrl;
-    if (this.hasAttribute('img')) {
-      imgUrl = this.getAttribute('img');
+    if (this.hasAttribute('svgicon')) {
+      imgUrl = this.getAttribute('svgicon');
     } else {
       imgUrl = '';
     }
 
-    img.src = imgUrl;
+    icon.innerHTML = imgUrl;
 
     // Create some CSS to apply to the shadow dom
     const style = document.createElement('style');
-    console.log(style.isConnected);
+    // console.log(style.isConnected);
 
     const defWidth = 60;
     const defHeight = 30;
@@ -74,15 +74,15 @@ class Tags extends HTMLElement {
   background-color: var(--tag-4);
 }
 
-      img {
+      icon {
         height:100%;
         margin: 0 15px;
       }
     `;
     shadow.appendChild(style);
-    console.log(style.isConnected);
+    // console.log(style.isConnected);
     shadow.appendChild(wrapper);
-    wrapper.appendChild(img);
+    wrapper.appendChild(icon);
   }
 }
 customElements.define('tgl-tag', Tags);
@@ -92,7 +92,7 @@ class TagBars extends HTMLElement {
     super();
   }
   connectedCallback() {
-    console.log('Tag bar element added to page.');
+    // console.log('Tag bar element added to page.');
     // Create a shadow root
     // const shadow = this.attachShadow({ mode: 'open' });
     // shadow.appendChild(stylingHelp.content.cloneNode(true));
