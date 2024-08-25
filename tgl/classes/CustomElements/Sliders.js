@@ -1,6 +1,7 @@
 class Sliders extends HTMLElement {
   constructor() {
     super();
+    this._value = 0;
   }
 
   connectedCallback() {

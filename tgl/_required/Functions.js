@@ -22,7 +22,7 @@ async function InitializeJSONData() {
   // Initialize JSON data with path and an alias to use in scripts
   const jsonData = {};
   const files = [
-    { alias: 'User', path: './assets/data/_users.json' },
+    { alias: 'Users', path: './assets/data/_users.json' },
     { alias: 'Lang', path: './assets/data/_languages.json' }
   ];
   for (const file of files) {

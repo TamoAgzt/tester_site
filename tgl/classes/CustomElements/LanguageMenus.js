@@ -67,6 +67,17 @@ class LanguageMenus extends HTMLElement {
     shadow.appendChild(style);
     // console.log(style.isConnected);
     shadow.appendChild(wrapper);
+
+    wrapper.addEventListener('change', (event) => {
+      if (event.target.name === 'languageCode') {
+        const selectedLanguage = event.target.value;
+        document.dispatchEvent(
+          new CustomEvent('languageChange', {
+            detail: { language: selectedLanguage }
+          })
+        );
+      }
+    });
   }
 }
 customElements.define('tgl-language-menu', LanguageMenus);

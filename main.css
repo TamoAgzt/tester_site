@@ -26,11 +26,27 @@ tgl-button[content='Logout'] {
   top: 5px;
 }
 tgl-language-menu {
+  visibility: hidden;
+}
+/* tgl-language-menu {
   position: absolute;
   left: 5px;
   top: 5px;
-}
+} */
 
 .true-content {
   margin: 5px 15%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row h1 {
+  margin-right: 10px;
+}
+
+#sliderDisplay {
+  width: 200px;
+  height: 30px;
 }

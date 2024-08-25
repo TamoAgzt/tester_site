@@ -1,12 +1,16 @@
 {
   "en": {
     "Headers": {
+      "Greet": "Welcome, ",
       "Main": "Super cool test site",
-      "Cypress": "Cypress testing"
+      "Cypress": "What is Cypress?",
+      "Playwright": "What is Playwright?"
     },
     "Contents": {
-      "Purpose": "Use this website to play around with cypress",
-      "AboutCy": "Cypress is a JavaScript framework used for end-to-end testing."
+      "Purpose": "Use this website to play around with Cypress, Playwright or any framework of your choosing!",
+      "AboutCy": "Cypress is an automated JavaScript framework for end-to-end testing of web applications. It provides a simple and intuitive API, making it easy to write and maintain tests. Cypress runs tests directly in the browser, ensuring fast and reliable results. The framework automatically waits for elements to be available and visible before performing actions.",
+      "AboutPw": "Playwright is a cross-language framework that allows you to write tests in TypeScript, JavaScript, Python, .NET, and Java. It provides native mobile emulation for Google Chrome on Android and Mobile Safari. Playwright waits for elements to be actionable before performing actions. It also has a rich set of introspection events.",
+      "Input": ""
     },
     "Buttons": {
       "Save": "Save",
@@ -18,17 +22,21 @@
       "Options": "Options",
       "Settings": "Settings",
       "Login": "Log in",
-      "Logout": "Log out"
+      "Logout": "Log out",
+      "Click": "Click here for further information!"
     }
   },
   "nl": {
     "Headers": {
+      "Greet": "Welkom, ",
       "Main": "Super coole test site",
-      "Cypress": "Cypress testing"
+      "Cypress": "Wat is Cypress?",
+      "Playwright": "Wat is Playwright?"
     },
     "Contents": {
-      "Purpose": "Gebruik dit website om rond te spelen met Cypress",
-      "AboutCy": "Cypress is een JavaScript framework gebruikt voor end-to-end testing."
+      "Purpose": "Gebruik dit website om rond te spelen met Cypress, Playwright of iets anders naar eigen keus!",
+      "AboutCy": "Cypress is een geautomatiseerd JavaScript-framework voor end-to-end testen van webapplicaties. Het biedt een eenvoudige en intuïtieve API, waardoor het gemakkelijk is om testen te schrijven en te onderhouden. Cypress voert tests direct in de browser uit, wat zorgt voor snelle en betrouwbare resultaten. Het framework wacht automatisch tot de elementen beschikbaar en zichtbaar zijn voordat acties worden uitgevoerd.",
+      "AboutPw": "Playwright is een cross-language framework waarmee je tests kan schrijven in: TypeScript, JavaScript, Python, .NET, Java. Native mobiel emulatie van Google Chrome voor Android en Mobile Safari. Playwright wacht tot elementen actief zijn voordat het acties uitvoert. Het heeft ook een uitgebreide set introspectie-evenementen."
     },
     "Buttons": {
       "Save": "Opslaan",
@@ -40,17 +48,21 @@
       "Options": "Opties",
       "Settings": "Instellingen",
       "Login": "Inloggen",
-      "Logout": "Uitloggen"
+      "Logout": "Uitloggen",
+      "Click": "Klik hier voor verdere informatie!"
     }
   },
   "hu": {
     "Headers": {
+      "Greet": "Üdvözlöm, ",
       "Main": "Szuper cool teszt site",
-      "Cypress": "Cypress tesztelés"
+      "Cypress": "Mi is Cypress?",
+      "Playwright": "Mi is Playwright?"
     },
     "Contents": {
-      "Purpose": "Használd ezt a weboldalt arra hogz játsz Cypress-el.",
-      "AboutCy": "Cypress egy end-to-end teszelésre készült JavaScript framework."
+      "Purpose": "Használd ezt a weboldalt arra hogy játsz Cypress-el, Playwright-al vagy valamivel saját választásra!",
+      "AboutCy": "A Cypress egy automatizált JavaScript-keretrendszer webalkalmazások végpontok közötti teszteléséhez. Egyszerű és intuitív API-t kínál, így könnyű teszteket írni és karbantartani. A Cypress közvetlenül a böngészőben futtatja a teszteket, ami gyors és megbízható eredményeket biztosít. A keretrendszer automatikusan megvárja, amíg az elemek elérhetők és láthatók lesznek, mielőtt végrehajtja az akciókat.",
+      "AboutPw": "A Playwright egy többnyelvű framework, amely lehetővé teszi tesztek írását TypeScript, JavaScript, Python, .NET és Java nyelven. Natív mobil emulációt biztosít a Google Chrome Androidos és a Mobile Safari böngészők számára. A Playwright megvárja, amíg az elemek aktívvá válnak, mielőtt végrehajtja az akciókat. Emellett gazdag introspekciós eseménykészlettel rendelkezik."
     },
     "Buttons": {
       "Save": "Mentés",
@@ -62,7 +74,8 @@
       "Options": "Opciók",
       "Settings": "Beállítások",
       "Login": "Bejelentkezés",
-      "Logout": "Kijelentkezés"
+      "Logout": "Kijelentkezés",
+      "Click": "Kattincs ide további információért!"
     }
   }
 }
