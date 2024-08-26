@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="tgl/_required/Functions.js"></script>
     <script src="tgl/classes/CustomElements/UIComponents.js" defer></script>
     <script src="tgl/classes/Langer/Langer.js" defer></script>
 
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
   </head>
   <body>
     <tgl-language-menu languages="en"></tgl-language-menu>
@@ -33,17 +38,44 @@
       <a class="button" href="https://playwright.dev/">Click</a>
       <br />
 
-      <tgl-slider
-        size="2"
-        shape="square"
-        min="0"
-        max="100"
-        value="50"
-      ></tgl-slider>
-      <p id="sliderDisplay"></p>
+      <div class="testables">
+        <h2>Profile</h2>
+        <div class="form-group">
+          <label for="sliderHeight">Height</label>
+          <div id="sliderHeight" class="slider"></div>
+          <p><span id="sliderHeightValue"></span></p>
+        </div>
+
+        <div class="form-group">
+          <label for="sliderWeight">Weight</label>
+          <div id="sliderWeight" class="slider"></div>
+          <p><span id="sliderWeightValue"></span></p>
+        </div>
+
+        <div class="form-group">
+          <label for="dropdownHair">Hair color</label>
+          <select id="dropdownHair">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="brown">Brown</option>
+            <option value="blond">Blond</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="black">Black</option>
+            <option value="orange">Orange</option>
+          </select>
+        </div>
+
+        <button id="saveButton">Save Settings</button>
+        <p id="statusMessage"></p>
+
+        <button id="loadButton">Load Settings</button>
+      </div>
     </div>
   </body>
   <script src="main.js"></script>
+  <script src="testables.js"></script>
   <script>
     let auth = sessionStorage.getItem('logedin');
     if (auth == false || auth == null || auth == '') {

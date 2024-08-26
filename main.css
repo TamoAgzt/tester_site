@@ -9,6 +9,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.slider {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.testables {
+  margin: 10vh 0;
+}
+
 form {
   position: fixed;
   margin: 0 20%;

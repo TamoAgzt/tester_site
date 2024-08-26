@@ -27,27 +27,12 @@ $(document).ready(async function () {
     $('#username').text(loggedInUser);
   }
 
-  const slider = document.querySelector('tgl-slider');
-  const valueDisplay = $('#sliderDisplay');
-
-  if (slider) {
-    slider.addEventListener('ready', function () {
-      const input = slider.shadowRoot.querySelector('input');
-
-      if (input) {
-        valueDisplay.text('Slider value: ' + input.value);
-        input.addEventListener('input', function () {
-          valueDisplay.text('Slider value: ' + input.value);
-        });
-      }
-    });
-  }
-
-  document.addEventListener('languageChange', async function (event) {
-    const lang = event.detail.language;
-    sessionStorage.setItem('lang', lang);
-    await LanguageCheck();
-  });
+  // document.addEventListener('languageChange', async function (event) {
+  //   const lang = event.detail.language;
+  //   sessionStorage.setItem('lang', lang);
+  //   await LanguageCheck();
+  // });
+  sessionStorage.setItem('lang', 'en');
   await LanguageCheck();
 });
 
@@ -78,16 +63,13 @@ async function Logout() {
 }
 
 async function LanguageCheck() {
-  const lang =
-    sessionStorage.getItem('lang') ||
-    $('input[name=languageCode]:checked').val() ||
-    'en';
+  const lang = sessionStorage.getItem('lang') || 'en';
 
   UpdateContent(data, lang);
 
-  $('input[name=languageCode]').each(function () {
-    $(this).prop('checked', $(this).val() === lang);
-  });
+  // $('input[name=languageCode]').each(function () {
+  //   $(this).prop('checked', $(this).val() === lang);
+  // });
 }
 
 function UpdateContent(data, lang) {

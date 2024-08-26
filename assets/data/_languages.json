@@ -4,7 +4,8 @@
       "Greet": "Welcome, ",
       "Main": "Super cool test site",
       "Cypress": "What is Cypress?",
-      "Playwright": "What is Playwright?"
+      "Playwright": "What is Playwright?",
+      "Profile": "Profile settings"
     },
     "Contents": {
       "Purpose": "Use this website to play around with Cypress, Playwright or any framework of your choosing!",
@@ -31,7 +32,8 @@
       "Greet": "Welkom, ",
       "Main": "Super coole test site",
       "Cypress": "Wat is Cypress?",
-      "Playwright": "Wat is Playwright?"
+      "Playwright": "Wat is Playwright?",
+      "Profile": "Profiel instellingen"
     },
     "Contents": {
       "Purpose": "Gebruik dit website om rond te spelen met Cypress, Playwright of iets anders naar eigen keus!",
@@ -57,7 +59,8 @@
       "Greet": "Üdvözlöm, ",
       "Main": "Szuper cool teszt site",
       "Cypress": "Mi is Cypress?",
-      "Playwright": "Mi is Playwright?"
+      "Playwright": "Mi is Playwright?",
+      "Profile": "Profil beállítások"
     },
     "Contents": {
       "Purpose": "Használd ezt a weboldalt arra hogy játsz Cypress-el, Playwright-al vagy valamivel saját választásra!",
