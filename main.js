@@ -32,6 +32,7 @@ $(document).ready(async function () {
   //   sessionStorage.setItem('lang', lang);
   //   await LanguageCheck();
   // });
+
   sessionStorage.setItem('lang', 'en');
   await LanguageCheck();
 });

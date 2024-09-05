@@ -1,24 +1,30 @@
 $(document).ready(function () {
   $('#sliderHeight').slider({
-    min: 50,
+    min: 25,
     max: 300,
     value: 100,
     slide: function (event, ui) {
+      $('#sliderHeightValue').text(ui.value + 'cm');
+    },
+    change: function (event, ui) {
       $('#sliderHeightValue').text(ui.value + 'cm');
     }
   });
 
   $('#sliderWeight').slider({
     min: 20,
-    max: 500,
+    max: 400,
     value: 75,
     slide: function (event, ui) {
+      $('#sliderWeightValue').text(ui.value + 'kg');
+    },
+    change: function (event, ui) {
       $('#sliderWeightValue').text(ui.value + 'kg');
     }
   });
 
-  $('#sliderHeightValue').text($('#sliderHeight').slider('value') + 'cm');
-  $('#sliderWeightValue').text($('#sliderWeight').slider('value') + 'kg');
+  $('#sliderHeightValue').html($('#sliderHeight').slider('value') + 'cm');
+  $('#sliderWeightValue').html($('#sliderWeight').slider('value') + 'kg');
 
   const dbName = 'SettingsDB';
   let db;
@@ -41,12 +47,16 @@ $(document).ready(function () {
     };
   };
 
+  const loggedInUser = parseInt(sessionStorage.getItem('user'));
+
   $('#saveButton').click(function () {
     const transaction = db.transaction(['settings'], 'readwrite');
     const objectStore = transaction.objectStore('settings');
 
     const settings = {
-      id: 1,
+      id: loggedInUser,
+      name: $('#textfieldName').val(),
+      workout: $('#textfieldWorkout').val(),
       height: $('#sliderHeight').slider('value'),
       weight: $('#sliderWeight').slider('value'),
       hair: $('#dropdownHair').val()
@@ -67,17 +77,16 @@ $(document).ready(function () {
   $('#loadButton').click(function () {
     const transaction = db.transaction(['settings'], 'readonly');
     const objectStore = transaction.objectStore('settings');
-    const request = objectStore.get(1);
+    const request = objectStore.get(loggedInUser);
 
     request.onsuccess = function (event) {
       const settings = event.target.result;
       if (settings) {
+        $('#textfieldName').val(settings.name);
+        $('#textfieldWorkout').val(settings.workout);
         $('#sliderHeight').slider('value', settings.height);
         $('#sliderWeight').slider('value', settings.weight);
         $('#dropdownHair').val(settings.hair);
-
-        $('#sliderHeightValue').text(settings.height);
-        $('#sliderWeightValue').text(settings.weight);
 
         $('#statusMessage').text('Settings loaded successfully!');
       } else {

@@ -40,19 +40,27 @@
 
       <div class="testables">
         <h2>Profile</h2>
-        <div class="form-group">
+
+        <div class="form-group for-texts">
+          <label for="textfieldName">Name</label>
+          <input id="textfieldName" placeholder="Name"></input>
+          <label for="textfieldWorkout">Favourite workout</label>
+          <input id="textfieldWorkout" placeholder="Workout"></input>
+        </div>
+
+        <div class="form-group for-height">
           <label for="sliderHeight">Height</label>
           <div id="sliderHeight" class="slider"></div>
-          <p><span id="sliderHeightValue"></span></p>
-        </div>
+          <p id="sliderHeightValue"></p>
+        <!-- </div>
 
-        <div class="form-group">
+        <div class="form-group for-weight"> -->
           <label for="sliderWeight">Weight</label>
           <div id="sliderWeight" class="slider"></div>
-          <p><span id="sliderWeightValue"></span></p>
+          <p id="sliderWeightValue"></p>
         </div>
 
-        <div class="form-group">
+        <div class="form-group for-hair-color">
           <label for="dropdownHair">Hair color</label>
           <select id="dropdownHair">
             <option value="red">Red</option>
